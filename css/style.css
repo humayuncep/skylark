@@ -1,0 +1,491 @@
+/*////////////////
+//  Import
+////////////////*/
+@import url(http://fonts.googleapis.com/css?family=Arbutus);
+@import url(http://fonts.googleapis.com/css?family=Rye);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+/*////////////////
+//  Global
+////////////////*/
+/**{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: helvetica, sans-serif, serif;
+}*/
+h1 {
+	font-size: 6em;
+	font-family: Rye;
+}
+h2 {
+	font-family: Rye;
+	font-size: 4em;
+	text-transform: uppercase;
+}
+h3{
+	font-family: "Berkshire Swash";
+	font-size: 2em;
+	text-transform: uppercase;
+}
+h4 {
+	font-family: "Berkshire Swash";
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.section-heading {
+
+}
+.wrapper{
+	background-color: rgba(0, 0, 0, .5);
+	padding: 100px 0px 20px;
+}
+a .button{
+	display: inline-block;
+	padding: 7px;
+	color: white;
+	font-size: 18px;
+	border: 1px solid white;
+	text-transform: uppercase;
+	margin:0px 30px 40px;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-weight: bold;
+}
+a .button:hover{
+	background-color: white;
+	color: black;
+	transition: .5s;
+}
+a{
+	color: #74BFFF;
+}
+a:visited, a:focus, a:active, a:hover{
+	color: #74BFFF;
+	text-decoration: none;
+}
+/*////////////////
+//  Header
+////////////////*/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #303F9F;
+  padding: 0px;
+ }
+.navbar-fixed-top{
+	background-color: #303F9F;
+	opacity: 1;
+}
+.heading{
+	background: url(../img/bn.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.downNav{
+	width: 200px;
+	max-width: 300px;
+	position: absolute;
+	display: none;
+	background-color: orange;
+	right: 102px;
+	top: 50px;
+}
+/*.nav#home:hover .downNav{
+	right: 0px;
+	display: block;
+	transition: 2s;
+}*/
+.call{
+	float: right;
+	font-size: 18px;
+	color: rgb(255, 255, 0);
+	font-family: Roboto;
+	letter-spacing: 1px;
+}
+.navbar{
+	background-color: transparent;
+  	border: 0px;
+  	padding-top: 10px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: rgb(255, 255, 0);
+  padding: 10px;
+  font-size: 36px;
+  border: 1px solid rgb(255, 255, 0);
+  transition: .5s;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #303F9F;
+  transform:rotateZ(180deg);
+  transition: .2s;
+  background-color: rgb(255, 255, 0);
+}
+h1 img{
+	width: 40%;
+	min-width: 240px;
+	margin-left: 10%;
+	margin-top: 6%;
+}
+#logo img{
+	height: 30px;
+	display: inline-block;
+}
+.home{
+	padding: 36px 0px 212px;
+	color: rgb(255, 255, 0);
+	/*text-shadow: 10px 10px 3px #000;*/
+  	letter-spacing: 2px
+}
+
+/*////////////////
+//  Service
+////////////////*/
+.service {
+	opacity: .8;
+	background-color: white;
+	color: black;
+}
+
+.service p{
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 500;
+}
+.service .svc-wrap p{
+	text-align: justify;
+}
+.svc-wrap .row{
+	  margin-bottom: 20px;
+}
+.icon{
+	border-radius: 100%;
+	width: 120px;
+	height: 120px;
+	margin-top: 20px;
+	background-color: #303F9F;
+	float: right;
+	color: white;
+	text-align: center;
+	padding-top: 24px;
+	opacity: .5;
+}
+.icon:hover {
+	opacity: 1;
+	color: rgba(255,255,0,1);
+	font-size: 16px;
+  	padding-top: 16px;
+  	transform:rotateZ(360deg);
+  	transition: 1s;
+}
+.svc-img-wrap{
+	text-align: center;
+}
+.svc-img{
+	border-radius: 5px;
+	margin-top: 20px;
+	width: 95%;
+	box-shadow: 0px 0px 10px black;
+}
+
+/*///////////////
+// Project
+///////////////*/
+/*.project {
+	background: url(../img/PillsburyCustomerService1.jpg) no-repeat center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: black;
+	opacity: .8;
+	background-color: white;
+	color: black;
+}
+.project a .button{
+	color: black;
+	border: 1px solid black;
+}
+.project a .button:hover{
+	background-color: black;
+	color: white;
+}*/
+.project p{
+	text-align: center;
+	font-size: 30px;
+	font-family: "Berkshire Swash";
+	color: black;
+	vertical-align: middle;
+}
+
+/*///////////////////
+// Title
+///////////////////*/
+.title{
+	background-color: white;
+	opacity: .9;
+}
+.titleBlock{
+	position: relative;
+}
+.vb {
+	width: 2px;
+	background-color: gray;
+	position: absolute;
+	left: 50%;
+	height: 98%;
+	margin-left: -1px;
+	margin-top: 10px;
+}
+.arrow{
+	background-color: gray;
+	border: 2px solid gray;
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: 50%;
+	border-radius: 100%;
+}
+.arrow:hover {
+	transform:rotateZ(45deg);
+	border-radius: 0px;
+	background-color: white;
+	cursor: help;
+}
+.left .arrow {
+	left: 104%;
+	margin-left: -3px;
+}
+.right .arrow {
+	right: 104%;
+	margin-right: -4px;
+}
+.hl{
+	border: 1px solid gray;
+  	height: 0px;
+  	width: 18px;
+  	position: absolute;
+  	top: 50%;
+  	margin-top: 7px;
+}
+.left .hl {
+	left: 104%;
+	margin-left: -21px;
+}
+.right .hl{
+	right: 104%;
+  	margin-right: -22px;
+}
+.title p{
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 500;
+}
+.title .titleBlock p{
+	text-align: justify;
+}
+.title-img{
+	width: 170px;
+  	margin-top: 12px;
+  	border-radius: 3px;
+}
+.left, .right{
+	border: 1px solid gray;
+	margin: 30px 10px;
+	position: relative;
+}
+/*.left{
+	
+}
+.right {
+	
+}*/
+
+/*///////////////////
+// Blog
+///////////////////*/
+.blog{
+	color: white;
+}
+.blog a .button{
+	padding: 5px 10px;
+	font-size: 18px;
+	margin: 15px 2px;
+	text-transform: inherit;
+	margin: 0px 0px 0px 40px;
+}
+.blog a .button:hover{
+	color: #3a5795;
+}
+.blog .item p{
+	padding-left: 40px;
+	text-align: justify;
+}
+.owl-controls .owl-page span {
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0px 6px !important;
+  border-radius: 100% !important;
+  background: #3FE9FF !important;
+}
+
+/*///////////////////
+// Share
+///////////////////*/
+.share{
+	color: white;
+	font-size: 25px;
+	font-family: "Berkshire Swash";
+}
+.bgc{
+	background-color: black;
+	opacity:.9;
+	padding-bottom: 20px;
+}
+.share b {
+	font-family: "Berkshire Swash";
+}
+.share a .icon{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	float: center;
+	font-size: 25px;
+	padding-top: 3px;
+	margin-left: 8px;
+	background-color: white;
+	color: rgb(163, 126, 8);
+	border: 1px solid white;
+}
+.share a .icon:hover{
+	padding-top: 3px;
+	background-color: black;
+	color: #74BFFF;
+}
+
+/*///////////////////
+// Contact Us
+///////////////////*/
+.contactUs{
+	color: white;
+	background: url(../img/regional_map.png) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.contactUs .button {
+	color: #07467C;
+	background-color: #8E8E8E;
+	border: #74BFFF;
+}
+.contactUs .button:hover {
+	color: black;
+}
+.bt{
+	padding-left: 80px;
+	font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+}
+.bt{
+	list-style-type: none;
+}
+.bt a li:hover{
+	color: white;
+}
+.form-control {
+    box-shadow: none;
+    border: 1px solid #8E8E8E;
+    border-radius: 0px;
+    padding: 12px 12px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.11);
+}
+.form-group input,.form-group textarea {
+    color: #FFF;
+}
+.credit{
+	color: white;
+}
+.credit .bgc{
+	padding-bottom: 0px;
+}
+.credit .navbar-nav>li>a {
+	color: rgb(26, 245, 195);
+	font-size: 18px;
+	padding: 20px 10px;
+}
+.credit .navbar-nav>li>a:hover {
+	color: black;
+}
+
+a.top{
+	height: 50px;
+	width: 50px;
+	background-color: #303F9F;
+	opacity: .3;
+	color: white;
+	right: 40px;
+	bottom: 40px;
+	border: 1px solid white;
+	position: fixed;
+	border-radius: 100%;
+  	padding-top: 5px;
+  	font-size: 32px;
+  	text-align: center;
+}
+a.top:hover{
+	opacity: 1;
+}
+
+
+
+/*#####################################################################################
+##                                     Responsive
+######################################################################################*/
+
+/*//////////////////////
+	Google Nexus 10;
+	Google Nexus 7;
+	Apple iPhone 4;
+//////////////////////*/
+
+@media (max-width: 1279px){
+	.hl, .vb, .arrow{
+		display: none;
+	}
+}
+@media (max-width: 1280px){
+	.left{
+		margin: 32px 10px;
+	}
+	.right{
+		margin: 32px 9px;
+	}
+}
+@media (max-width: 966px){
+	.project {
+		text-align: center;
+	}
+	.blog .item p {
+ 	padding-left: 0px; 
+	}
+	.blog .col-md-6{
+		text-align: center;
+	}
+}
+@media (max-width: 320px){
+	h1{
+		font-size: 4em;
+	}
+	h2{
+		font-size: 3em;
+	}
+	h3{
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 15px !important;
+	}
+}
